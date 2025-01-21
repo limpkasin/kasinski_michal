@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta name="author" content="Michał Kasiński 2TA">
+    <meta name="keywords" content="siedem, cudy, 7, cudow">
+    <meta name="description" content="strona zawiera opis 7 różnych cudów świata">
+    <meta name="last-modified" content="2025-01-13">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="styl.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body class="cud-7">
+    <div class="gora7">
+        <form >
+        <label for="nazwa-cudu" id="sekcja1">Jak nazywa się cud świata znajdujący się w Meksyku?</label>
+        <input type="text" id="nazwa-cudu" name="nazwa-cudu" placeholder="Wpisz nazwę" required>
+        <label>W którym roku ogłoszono listę Nowych 7 Cudów Świata?</label>
+        <div>
+            <input type="radio" id="rok-2007" name="rok" value="2007">
+            <label for="rok-2007">2007</label>
+        </div>
+        <div>
+            <input type="radio" id="rok-2010" name="rok" value="2010">
+            <label for="rok-2010">2010</label>
+        </div>
+        <div>
+            <input type="radio" id="rok-2000" name="rok" value="2000">
+            <label for="rok-2000">2000</label>
+        </div>
+        <label>Które z poniższych to Nowe Cuda Świata? (Wybierz wszystkie poprawne)</label>
+        <div>
+            <input type="checkbox" id="chichen-itza" name="cudy[]" value="Chichen Itza">
+            <label for="chichen-itza">Chichen Itza</label>
+        </div>
+        <div>
+            <input type="checkbox" id="koloseum" name="cudy[]" value="Koloseum">
+            <label for="koloseum">Koloseum</label>
+        </div>
+        <div>
+            <input type="checkbox" id="wieza-eiffla" name="cudy[]" value="Wieża Eiffla">
+            <label for="wieza-eiffla">Wieża Eiffla</label>
+        </div>
+        <div>
+            <input type="checkbox" id="machu-picchu" name="cudy[]" value="Machu Picchu">
+            <label for="machu-picchu">Machu Picchu</label>
+        </div>
+        <div>
+            <input type="checkbox" id="cristo-redentor" name="cudy[]" value="Cristo Redentor">
+            <label for="cristo-redentor">Pałac Kultury</label>
+        </div>
+        <label for="wiek-chichen-itza">Ile lat ma piramida Kukulkana w Chichén Itzá?</label>
+        <input type="number" id="wiek-chichen-itza" name="wiek-chichen-itza" placeholder="Podaj liczbę lat">
+        <label for="dlugosc-muru">Jaka jest szacowana długość Wielkiego Muru Chińskiego w kilometrach?</label>
+        <input type="number" id="dlugosc-muru" name="dlugosc-muru" placeholder="Podaj liczbę kilometrów" step="0.01">
+            <div class="buttons">
+            <button type="reset" class="clear">Wyczyść</button>
+            <button type="submit" class="send">Prześlij</button>
+            </div>
+            <p>Koniec! <a href="#sekcja1">Przejdź na początek quizu!</a></p>
+        </form>
+    </div>
+</body>
